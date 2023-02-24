@@ -41,6 +41,6 @@ class GPayMainActivity : AppCompatActivity() {
             putExtra(AppConstants.xTenant, intent.getStringExtra(AppConstants.xTenant))
             putExtra(AppConstants.action, AppConstants.homeActivity)
         }
-        startActivityForResult(homeIntent, 200)
+        startActivity(intent)
     }
 }
