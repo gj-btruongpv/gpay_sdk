@@ -5,6 +5,7 @@ plugins {
 }
 
 android {
+
     namespace 'com.gpay.my_gpay_sdk'
     compileSdk 33
 
