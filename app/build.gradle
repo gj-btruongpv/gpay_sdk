@@ -38,6 +38,14 @@ android {
     dataBinding {
         enable = true
     }
+    
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
+    namespace 'com.gpay.sdk'
 
 }
 
