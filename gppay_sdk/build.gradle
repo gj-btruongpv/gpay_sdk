@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace 'com.gpay.gppay_sdk'
+ 
     compileSdk 33
 
     defaultConfig {
@@ -91,7 +91,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.gj-btruongpv'
             artifactId = 'gpay_sdk'
-            version = '5.0.0'
+            version = '5.0.1'
 
             afterEvaluate {
                 from components.release
