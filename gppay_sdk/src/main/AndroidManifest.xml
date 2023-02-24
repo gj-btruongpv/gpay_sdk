@@ -5,6 +5,7 @@
         <activity
             android:name=".GPayMainActivity"
             android:exported="false"
+            android:enableOnBackInvokedCallback="true"
             android:label="@string/title_activity_gpay_main"
             />
     </application>
