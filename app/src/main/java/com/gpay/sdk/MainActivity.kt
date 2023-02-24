@@ -6,11 +6,13 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.gpay.gppay_sdk.GPayMainActivity
+import com.gpay.my_gpay_sdk.GPayMainActivity
+import com.gpay.my_gpay_sdk.HomeClass
 import com.gpay.sdk.databinding.ActivityMainBinding
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
+    //Create file aar: ./gradlew app:my_gpay_sdk:assembleRelease
 
     private lateinit var binding: ActivityMainBinding
 

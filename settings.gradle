@@ -17,3 +17,6 @@ dependencyResolutionManagement {
 rootProject.name = "gpay_sdk"
 include ':app'
 include ':app:gppay_sdk'
+include ':app:my_gpay_sdk'
+
+
