@@ -90,7 +90,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.gj-btruongpv'
             artifactId = 'gpay_sdk'
-            version = '1.0.0'
+            version = '3.0.5'
 
             afterEvaluate {
                 from components.release
