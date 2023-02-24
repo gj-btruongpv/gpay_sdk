@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, GPayMainActivity::class.java).apply {
                 putExtra("accessToken", "accessToken")
                 putExtra("clientKey", "galaxyjoy")
-                putExtra("xPhone", "0376249134")
+                putExtra("xPhone", "0814653077")
                 putExtra("xTenant", "GALAXYJOY")
             }
             startActivityForResult(intent, 200)

@@ -39,26 +39,6 @@ android {
         enable = true
     }
 
-    publishing {
-        singleVariant("release") {
-            withSourcesJar()
-            withJavadocJar()
-        }
-    }
-
-}
-
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-                groupId 'com.example'
-                artifactId 'mylibrary'
-                version = '1.0.0'
-            }
-        }
-    }
 }
 
 dependencies {
@@ -69,8 +49,8 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
     implementation project(path: ':app:gppay_sdk')
+   // implementation 'com.github.gj-btruongpv:gpay_sdk:3.0.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-
 }
