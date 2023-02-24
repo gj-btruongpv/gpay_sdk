@@ -86,16 +86,14 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
 }
 
-publishing {
-    publications {
-        release(MavenPublication) {
-            groupId = 'com.github.gj-btruongpv'
-            artifactId = 'gpay_sdk'
-            version = '1.0.0'
+afterEvaluate {
+    android.libraryVariants.each{variant->
+        publishing.publications.create(variant.name, MavenPublication){
+            from components.findByName(variant.name)
 
-            afterEvaluate {
-                from components.release
-            }
-        }
+            groupId = 'com.mikeschvedov'
+            artifactId = "gpay_sdk"
+            version = '3.0.3'
+        } //
     }
 }
