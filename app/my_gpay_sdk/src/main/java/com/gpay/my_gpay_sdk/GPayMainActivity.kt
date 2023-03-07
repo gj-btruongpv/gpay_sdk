@@ -8,8 +8,6 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.gpay.my_gpay_sdk.databinding.ActivityGpayMainBinding
-import vn.galaxypay.gpaysdkmodule.ui.view.activity.HomePageActivity
-import vn.galaxypay.gpaysdkmodule.utils.AppConstants
 
 class GPayMainActivity : AppCompatActivity() {
 
@@ -29,18 +27,7 @@ class GPayMainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.fab.setOnClickListener {
-            startWalletHome(this)
+          
         }
-    }
-
-    private fun startWalletHome(activity: Activity) {
-        val homeIntent = Intent(activity, HomePageActivity::class.java).apply {
-            putExtra(AppConstants.accessToken, intent.getStringExtra(AppConstants.accessToken))
-            putExtra(AppConstants.clientKey, intent.getStringExtra(AppConstants.clientKey))
-            putExtra(AppConstants.xPhone, intent.getStringExtra(AppConstants.xPhone))
-            putExtra(AppConstants.xTenant, intent.getStringExtra(AppConstants.xTenant))
-            putExtra(AppConstants.action, AppConstants.homeActivity)
-        }
-        startActivity(intent)
     }
 }
